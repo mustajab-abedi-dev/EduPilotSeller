@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduPilot Suite — Command Center + RemarkAI | Smart School Management</title>
+  <meta name="description" content="EduPilot gives principals a real-time command center for academics, inspections, and teachers. RemarkAI adds AI-powered classroom analytics and remark management. Built for CBSE schools and intermediate colleges.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+</head>
+<body>
+
+<!-- ═══════════ NAVIGATION ═══════════ -->
+<nav class="nav" id="navbar">
+  <a href="#home" class="nav-logo">EduPilot Suite</a>
+  <div class="nav-links" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#problem">Problem</a>
+    <a href="#edupilot">EduPilot</a>
+    <a href="#remarkai">RemarkAI</a>
+    <a href="#workflow">Workflow</a>
+    <a href="#features">Features</a>
+    <a href="#founders">Founders</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="#contact" class="nav-cta">Get a Demo</a>
+  <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ═══════════ SECTION 1: HERO ═══════════ -->
+<section id="home">
+  <div class="section-container">
+    <div class="hero-grid">
+      <!-- LEFT -->
+      <div class="fade-up">
+        <div class="section-label">🎓 EduPilot Suite</div>
+        <h1 class="hero-headline">
+          Run your entire school from <span class="gradient-text">one command center.</span>
+        </h1>
+        <p class="hero-sub">
+          EduPilot gives principals a real-time overview of academics, inspections, teachers, and daily decisions — RemarkAI adds deep classroom analytics and AI insights.
+        </p>
+        <div class="hero-values">
+          <div class="hero-value"><span class="check">✓</span><span>Daily morning briefing with school health & readiness scores.</span></div>
+          <div class="hero-value"><span class="check">✓</span><span>Inspection readiness & compliance tracked automatically.</span></div>
+          <div class="hero-value"><span class="check">✓</span><span>Critical issues surfaced before they become crises.</span></div>
+          <div class="hero-value"><span class="check">✓</span><span>AI-powered student insights & remark tracking through RemarkAI.</span></div>
+        </div>
+        <div class="hero-ctas">
+          <a href="#edupilot" class="btn-primary">Visit Command Center</a>
+          <a href="#remarkai" class="btn-secondary">Explore RemarkAI</a>
+        </div>
+        <p class="trust-line">Designed for CBSE schools and intermediate colleges.</p>
+      </div>
+
+      <!-- RIGHT: Dashboard Mock -->
+      <div class="hero-dashboard fade-up float-anim" style="animation-delay: 0.3s;">
+        <div class="mock-header">
+          <div class="mock-greeting">
+            <h3>Good morning, <span class="gradient-text">Principal</span> 👋</h3>
+            <p>The school is on track. Two departments need a nudge today.</p>
+          </div>
+          <span class="mock-date">📅 Jul 5, 2026</span>
+        </div>
+
+        <div class="mock-summary">
+          <div class="mock-stat"><div class="val">98</div><div class="label">Classes Today</div></div>
+          <div class="mock-stat"><div class="val">42</div><div class="label">Teachers Ready</div></div>
+          <div class="mock-stat"><div class="val">2</div><div class="label">Depts Behind</div></div>
+          <div class="mock-stat"><div class="val" style="color: var(--green-400);">92%</div><div class="label">Inspection Ready</div></div>
+        </div>
+
+        <div class="mock-metrics">
+          <div class="mock-metric"><div class="num" style="color:var(--teal-300)">86</div><div class="lbl">Academic Health</div><div class="trend trend-up">↗ 3%</div></div>
+          <div class="mock-metric"><div class="num" style="color:var(--green-400)">91%</div><div class="lbl">School Ready</div><div class="trend trend-up">↗ 2%</div></div>
+          <div class="mock-metric"><div class="num" style="color:var(--blue-400)">92%</div><div class="lbl">Inspection Ready</div><div class="trend trend-up">↗ 4%</div></div>
+          <div class="mock-metric"><div class="num" style="color:var(--orange-300)">88%</div><div class="lbl">Teacher Ready</div><div class="trend trend-down">↘ 1%</div></div>
+          <div class="mock-metric"><div class="num" style="color:var(--teal-400)">312</div><div class="lbl">Hours Saved</div><div class="trend trend-up">↗ 28</div></div>
+        </div>
+
+        <div class="mock-issues-title">⚡ Active Issues</div>
+        <div class="mock-issue">
+          <span class="badge badge-critical">Critical</span>
+          <div><div class="issue-text">Class 8 Science is 9 days behind syllabus</div><div class="issue-impact">Unit test on Jul 10 — portion may not be covered</div></div>
+        </div>
+        <div class="mock-issue">
+          <span class="badge badge-high">High</span>
+          <div><div class="issue-text">Unit Test papers pending for Class 10 Maths</div><div class="issue-impact">Assessment window opens in 3 days</div></div>
+        </div>
+        <div class="mock-issue">
+          <span class="badge badge-medium">Medium</span>
+          <div><div class="issue-text">5 lesson plans awaiting HOD approval</div><div class="issue-impact">May delay next week's scheduled classes</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SECTION 2: PROBLEM ═══════════ -->
+<section id="problem">
+  <div class="section-container">
+    <div class="section-label fade-up" style="margin: 0 auto 20px; display: table;">😰 The Pain</div>
+    <h2 class="section-title fade-up">
+      Right now, your school runs on <span class="gradient-text">WhatsApp, spreadsheets, and guessing.</span>
+    </h2>
+    <p class="section-subtitle fade-up">Every Indian principal knows the chaos. Let's name it.</p>
+
+    <div class="problem-grid">
+      <div class="problem-card fade-up">
+        <div class="problem-icon">🔍</div>
+        <h4>No Single Source of Truth</h4>
+        <p>Principals must call HODs, check WhatsApp groups, and chase spreadsheets to know which classes are behind or which departments are late on reports.</p>
+      </div>
+      <div class="problem-card fade-up" style="transition-delay:0.1s">
+        <div class="problem-icon">🚨</div>
+        <h4>Inspection Panic</h4>
+        <p>Scrambling for files, lesson plans, and compliance reports days before CBSE inspections or internal audits. Every time feels like a fire drill.</p>
+      </div>
+      <div class="problem-card fade-up" style="transition-delay:0.2s">
+        <div class="problem-icon">😩</div>
+        <h4>Teacher Overload</h4>
+        <p>Teachers spending late evenings on remarks, grading, and approvals instead of focused teaching. Manual report cards take weeks every term.</p>
+      </div>
+      <div class="problem-card fade-up" style="transition-delay:0.3s">
+        <div class="problem-icon">👁️</div>
+        <h4>Missed Student Issues</h4>
+        <p>Attendance concerns, academic struggles, and high performers only noticed when it's too late — end of term, parent complaints, or board exam results.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SECTION 3: EDUPILOT SOLUTION ═══════════ -->
+<section id="edupilot">
+  <div class="section-container">
+    <div class="solution-grid">
+      <!-- LEFT -->
+      <div>
+        <div class="section-label fade-up">🛡️ Command Center</div>
+        <h2 class="section-title fade-up">EduPilot turns chaos into a <span class="gradient-text">clear, daily briefing.</span></h2>
+        <p class="section-subtitle fade-up">Every morning, see classes, teachers, departments, inspections, and what needs your attention — in one dashboard.</p>
+        
+        <div class="feature-list">
+          <div class="feature-item fade-up">
+            <div class="feature-icon">☀️</div>
+            <div><h5>Morning Briefing for Principals</h5><p>Daily snapshot of classes scheduled, teachers ready, departments behind target, and inspection readiness.</p></div>
+          </div>
+          <div class="feature-item fade-up">
+            <div class="feature-icon">📊</div>
+            <div><h5>Academic Health & Readiness Scores</h5><p>Composite scores for syllabus completion, submissions, approvals, and inspection preparedness.</p></div>
+          </div>
+          <div class="feature-item fade-up">
+            <div class="feature-icon">✅</div>
+            <div><h5>Inspection & Compliance Tracker</h5><p>View upcoming inspections and missing documents or assets at a glance. Never be caught off guard.</p></div>
+          </div>
+          <div class="feature-item fade-up">
+            <div class="feature-icon">⏱️</div>
+            <div><h5>Teacher Workload & Hours Saved</h5><p>Metrics showing how many hours are saved from manual planning, approvals, and paper-based workflows.</p></div>
+          </div>
+          <div class="feature-item fade-up">
+            <div class="feature-icon">🔔</div>
+            <div><h5>Issues & Alerts Feed</h5><p>Cards showing behind-schedule classes, pending unit tests, pending lesson plan approvals, with recommended actions.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Visual -->
+      <div class="solution-visual fade-up">
+        <div class="vis-card">
+          <div class="vis-card-title">📸 Today's Snapshot</div>
+          <div class="mock-summary" style="margin:0;">
+            <div class="mock-stat"><div class="val">98</div><div class="label">Classes</div></div>
+            <div class="mock-stat"><div class="val">42</div><div class="label">Teachers</div></div>
+            <div class="mock-stat"><div class="val" style="color:var(--green-400)">91%</div><div class="label">Ready</div></div>
+            <div class="mock-stat"><div class="val" style="color:var(--teal-300)">17 hrs</div><div class="label">Saved Today</div></div>
+          </div>
+        </div>
+
+        <div class="vis-card">
+          <div class="vis-card-title">📈 Health Scores</div>
+          <div class="progress-row"><span class="progress-label">Academic Health</span><div class="progress-bar"><div class="progress-fill fill-teal" data-width="86"></div></div><span class="progress-val">86</span></div>
+          <div class="progress-row"><span class="progress-label">School Readiness</span><div class="progress-bar"><div class="progress-fill fill-blue" data-width="91"></div></div><span class="progress-val">91%</span></div>
+          <div class="progress-row"><span class="progress-label">Inspection Ready</span><div class="progress-bar"><div class="progress-fill fill-teal" data-width="92"></div></div><span class="progress-val">92%</span></div>
+          <div class="progress-row"><span class="progress-label">Assessment Ready</span><div class="progress-bar"><div class="progress-fill fill-orange" data-width="74"></div></div><span class="progress-val">74%</span></div>
+        </div>
+
+        <div class="vis-card">
+          <div class="vis-card-title">⚡ Active Issues</div>
+          <div class="mock-issue"><span class="badge badge-critical">Critical</span><div><div class="issue-text">Class 8 Science — 9 days behind</div></div></div>
+          <div class="mock-issue"><span class="badge badge-high">High</span><div><div class="issue-text">Unit test papers pending — Class 10</div></div></div>
+          <div class="mock-issue"><span class="badge badge-high">High</span><div><div class="issue-text">3 teachers at workload capacity</div></div></div>
+          <div class="mock-issue"><span class="badge badge-medium">Medium</span><div><div class="issue-text">Lesson plans awaiting approval (5)</div></div></div>
+        </div>
+
+        <div class="vis-card">
+          <div class="vis-card-title">📅 Upcoming Timeline</div>
+          <div class="timeline-events">
+            <div class="timeline-event"><span class="date">Jul 7</span><span class="event-text">Class 9 Maths Unit Test</span></div>
+            <div class="timeline-event"><span class="date">Jul 10</span><span class="event-text">Class 8 Science Unit Test</span></div>
+            <div class="timeline-event"><span class="date">Jul 14</span><span class="event-text">CBSE compliance audit deadline</span></div>
+            <div class="timeline-event"><span class="date">Jul 18</span><span class="event-text">Mid-term lesson review</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SECTION 4: REMARKAI ═══════════ -->
+<section id="remarkai">
+  <div class="section-container">
+    <div class="solution-grid">
+      <!-- LEFT -->
+      <div>
+        <div class="section-label fade-up">🤖 AI-Powered</div>
+        <h2 class="section-title fade-up">RemarkAI: Smart remarks & <span class="gradient-text">classroom insights.</span></h2>
+        <p class="section-subtitle fade-up">For teachers and coordinators, RemarkAI automates remark workflows and surfaces students who need attention — or deserve recognition.</p>
+
+        <div class="feature-list">
+          <div class="feature-item fade-up">
+            <div class="feature-icon">📝</div>
+            <div><h5>Remark Progress Tracking</h5><p>Current term status at a glance: 48 total students, 38 remarks completed (79%), 5 pending review, 7 pending approval.</p></div>
+          </div>
+          <div class="feature-item fade-up">
+            <div class="feature-icon">📊</div>
+            <div><h5>Classroom Analytics</h5><p>Visual breakdown of remark status distribution by class and section. See which classes are ahead or behind on report generation.</p></div>
+          </div>
+          <div class="feature-item fade-up">
+            <div class="feature-icon">🧠</div>
+            <div><h5>AI-Powered Student Groups</h5><p>Automatically highlights students with attendance concerns, top performers for the term, and those needing additional academic support.</p></div>
+          </div>
+          <div class="feature-item fade-up">
+            <div class="feature-icon">🎯</div>
+            <div><h5>Actionable Lists</h5><p>Each AI group links to lists teachers can act on: call parents, plan remedial sessions, give awards, or schedule counselling.</p></div>
+          </div>
+        </div>
+
+        <div class="remarkai-note fade-up">
+          💡 <strong>With EduPilot and RemarkAI together,</strong> principals see the big picture while teachers manage the details.
+        </div>
+      </div>
+
+      <!-- RIGHT: Visual -->
+      <div class="remarkai-visual fade-up">
+        <div class="vis-card">
+          <div class="vis-card-title">📊 Remark Completion</div>
+          <div class="donut-container">
+            <div class="donut-chart">
+              <div class="donut-center">
+                <div class="pct">79%</div>
+                <div class="pct-label">Complete</div>
+              </div>
+            </div>
+            <div class="donut-legend">
+              <div class="legend-item"><span class="legend-dot" style="background:var(--green-500)"></span>Completed — 38</div>
+              <div class="legend-item"><span class="legend-dot" style="background:var(--yellow-500)"></span>Pending Review — 5</div>
+              <div class="legend-item"><span class="legend-dot" style="background:var(--orange-500)"></span>Pending Approval — 7</div>
+              <div class="legend-item"><span class="legend-dot" style="background:var(--gray-600)"></span>Not Started — 5</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="vis-card">
+          <div class="vis-card-title">🏫 Current Term Status</div>
+          <div class="mock-summary" style="margin:0;">
+            <div class="mock-stat"><div class="val">48</div><div class="label">Total Students</div></div>
+            <div class="mock-stat"><div class="val" style="color:var(--green-400)">38</div><div class="label">Completed</div></div>
+            <div class="mock-stat"><div class="val" style="color:var(--yellow-500)">5</div><div class="label">In Review</div></div>
+            <div class="mock-stat"><div class="val" style="color:var(--orange-400)">5</div><div class="label">Not Started</div></div>
+          </div>
+        </div>
+
+        <div class="vis-card">
+          <div class="vis-card-title">🧠 AI Student Groups</div>
+          <div class="ai-groups">
+            <div class="ai-group-card" style="border-color: rgba(239,68,68,0.2);">
+              <div class="ai-group-icon">⚠️</div>
+              <div class="count" style="color:var(--red-400)">7</div>
+              <div class="group-label">Attendance Concerns</div>
+            </div>
+            <div class="ai-group-card" style="border-color: rgba(34,197,94,0.2);">
+              <div class="ai-group-icon">⭐</div>
+              <div class="count" style="color:var(--green-400)">13</div>
+              <div class="group-label">Top Performers</div>
+            </div>
+            <div class="ai-group-card" style="border-color: rgba(249,115,22,0.2);">
+              <div class="ai-group-icon">🆘</div>
+              <div class="count" style="color:var(--orange-400)">8</div>
+              <div class="group-label">Support Needed</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="vis-card">
+          <div class="vis-card-title">📈 Progress by Class</div>
+          <div class="progress-row"><span class="progress-label">Class 8</span><div class="progress-bar"><div class="progress-fill fill-teal" data-width="85"></div></div><span class="progress-val">85%</span></div>
+          <div class="progress-row"><span class="progress-label">Class 9</span><div class="progress-bar"><div class="progress-fill fill-blue" data-width="72"></div></div><span class="progress-val">72%</span></div>
+          <div class="progress-row"><span class="progress-label">Class 10</span><div class="progress-bar"><div class="progress-fill fill-orange" data-width="68"></div></div><span class="progress-val">68%</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SECTION 5: WORKFLOW ═══════════ -->
+<section id="workflow">
+  <div class="section-container">
+    <div class="section-label fade-up" style="margin: 0 auto 20px; display: table;">🔄 Daily Flow</div>
+    <h2 class="section-title fade-up">From <span class="gradient-text">Briefing to Action</span></h2>
+    <p class="section-subtitle fade-up">The typical daily flow across both EduPilot and RemarkAI.</p>
+
+    <div class="workflow-steps">
+      <div class="workflow-step fade-up">
+        <div class="step-number">1</div>
+        <h5>Morning Briefing</h5>
+        <p>Principal checks school health, readiness scores, and key issues in EduPilot.</p>
+        <div class="step-connector"></div>
+      </div>
+      <div class="workflow-step fade-up" style="transition-delay:0.1s">
+        <div class="step-number">2</div>
+        <h5>Review & Approve</h5>
+        <p>Approve lesson plans and assessments, coordinate with HODs for catch-up plans.</p>
+        <div class="step-connector"></div>
+      </div>
+      <div class="workflow-step fade-up" style="transition-delay:0.2s">
+        <div class="step-number">3</div>
+        <h5>Teachers Update</h5>
+        <p>Teachers complete remark tasks, update grading, and let AI classify concerns in RemarkAI.</p>
+        <div class="step-connector"></div>
+      </div>
+      <div class="workflow-step fade-up" style="transition-delay:0.3s">
+        <div class="step-number">4</div>
+        <h5>Identify & Act</h5>
+        <p>Use AI groups to trigger parent communication, remedial classes, or recognition.</p>
+        <div class="step-connector"></div>
+      </div>
+      <div class="workflow-step fade-up" style="transition-delay:0.4s">
+        <div class="step-number">5</div>
+        <h5>Track Outcomes</h5>
+        <p>Principals see teacher hours saved and improved readiness over time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SECTION 6: FEATURES GRID ═══════════ -->
+<section id="features">
+  <div class="section-container">
+    <div class="section-label fade-up" style="margin: 0 auto 20px; display: table;">✨ Full Suite</div>
+    <h2 class="section-title fade-up">Everything in <span class="gradient-text">One Suite</span></h2>
+    <p class="section-subtitle fade-up">The combined power of EduPilot Command Center and RemarkAI.</p>
+
+    <div class="features-grid">
+      <div class="feature-block fade-up">
+        <div class="feature-block-icon">☀️</div>
+        <h4>Principal Morning Briefing</h4>
+        <p>Start every day with a complete school health snapshot — classes, teachers, & readiness.</p>
+      </div>
+      <div class="feature-block fade-up" style="transition-delay:0.05s">
+        <div class="feature-block-icon">📊</div>
+        <h4>Academic Health Scores</h4>
+        <p>Composite scores for syllabus completion, submissions, and assessment readiness across departments.</p>
+      </div>
+      <div class="feature-block fade-up" style="transition-delay:0.1s">
+        <div class="feature-block-icon">🔍</div>
+        <h4>Inspection Readiness</h4>
+        <p>Track CBSE compliance, missing documents, and audit preparedness at a glance.</p>
+      </div>
+      <div class="feature-block fade-up" style="transition-delay:0.15s">
+        <div class="feature-block-icon">⏱️</div>
+        <h4>Teacher Hours Saved</h4>
+        <p>Measure productivity gains from automated workflows — lesson plans, approvals, and remark generation.</p>
+      </div>
+      <div class="feature-block fade-up" style="transition-delay:0.2s">
+        <div class="feature-block-icon">📝</div>
+        <h4>Remark Progress Tracking</h4>
+        <p>Term-wise visibility into remark completion rates, pending reviews, and approval queues.</p>
+      </div>
+      <div class="feature-block fade-up" style="transition-delay:0.25s">
+        <div class="feature-block-icon">🧠</div>
+        <h4>AI Student Groups</h4>
+        <p>Automatically identify attendance concerns, top performers, and students needing academic support.</p>
+      </div>
+      <div class="feature-block fade-up" style="transition-delay:0.3s">
+        <div class="feature-block-icon">🏫</div>
+        <h4>Classroom Analytics</h4>
+        <p>Visual breakdown of remark status and performance metrics by class and section.</p>
+      </div>
+      <div class="feature-block fade-up" style="transition-delay:0.35s">
+        <div class="feature-block-icon">🔔</div>
+        <h4>Smart Alerts & Actions</h4>
+        <p>Priority-tagged issues with AI-recommended next steps — resolve before they escalate.</p>
+      </div>
+      <div class="feature-block fade-up" style="transition-delay:0.4s">
+        <div class="feature-block-icon">📅</div>
+        <h4>Academic Timeline</h4>
+        <p>View today, tomorrow, this week, and this month's academic milestones and deadlines.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SECTION 7: FOUNDERS ═══════════ -->
+<section id="founders">
+  <div class="section-container">
+    <div class="section-label fade-up" style="margin: 0 auto 20px; display: table;">👥 Our Team</div>
+    <h2 class="section-title fade-up">The team building your <span class="gradient-text">command center.</span></h2>
+    <p class="section-subtitle fade-up">We're a three-founder team building EduPilot and RemarkAI from the ground up for Indian schools and intermediate colleges.</p>
+
+    <div class="founders-grid">
+      <div class="founder-card fade-up">
+        <div class="founder-avatar">SK</div>
+        <h4>Seyyid Khaleel</h4>
+        <div class="founder-role">Full-Stack Engineer</div>
+        <p>Architects the entire EduPilot and RemarkAI platform — from real-time dashboards to secure school data infrastructure.</p>
+      </div>
+      <div class="founder-card fade-up" style="transition-delay:0.1s">
+        <div class="founder-avatar" style="background: linear-gradient(135deg, var(--orange-500), var(--red-500));">AR</div>
+        <h4>Co-Founder 2</h4>
+        <div class="founder-role">AI/ML Engineer</div>
+        <p>Builds the AI engine behind RemarkAI — student grouping, smart remark generation, and predictive academic analytics.</p>
+      </div>
+      <div class="founder-card fade-up" style="transition-delay:0.2s">
+        <div class="founder-avatar" style="background: linear-gradient(135deg, var(--blue-500), var(--teal-500));">PD</div>
+        <h4>Co-Founder 3</h4>
+        <div class="founder-role">Product & Design</div>
+        <p>Ensures every screen feels intuitive for principals and teachers — from morning briefings to remark workflows.</p>
+      </div>
+    </div>
+
+    <p class="founders-blurb fade-up">
+      EduPilot Suite is our original idea, purpose-built for the Indian education system. We focus specifically on CBSE and intermediate college workflows, and we're committed to working closely with principals and teachers to shape a tool that truly fits their day.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════ SECTION 8: FINAL CTA ═══════════ -->
+<section id="contact">
+  <div class="section-container">
+    <div class="section-label fade-up" style="margin: 0 auto 20px; display: table;">🚀 Get Started</div>
+    <h2 class="section-title fade-up">Turn your school into a <span class="gradient-text">smart command center.</span></h2>
+    <p class="section-subtitle fade-up" style="text-align:center; margin: 0 auto 40px;">See how EduPilot and RemarkAI work together for your school.</p>
+    
+    <div class="cta-buttons fade-up">
+      <a href="#" class="btn-primary" style="padding:16px 40px; font-size:1rem;">Visit EduPilot Command Center</a>
+      <a href="#" class="btn-primary btn-orange" style="padding:16px 40px; font-size:1rem;">Explore RemarkAI Demo</a>
+    </div>
+    <div class="fade-up" style="text-align:center; margin-top:12px;">
+      <a href="#" class="cta-tertiary">Schedule a demo call →</a>
+    </div>
+    <div class="fade-up" style="text-align:center;">
+      <div class="cta-reassurance">
+        🔒 No complex setup — we map EduPilot and RemarkAI to your existing timetables, departments, and remark formats.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <span>© 2026 EduPilot Suite. All rights reserved.</span>
+  <span>Built with ❤️ for Indian schools</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
