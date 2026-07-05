@@ -143,3 +143,10 @@ const heroObserver = new IntersectionObserver((entries) => {
 
 const heroSection = document.getElementById('home');
 if (heroSection) heroObserver.observe(heroSection);
+
+// Dynamic WhatsApp link setup
+document.querySelectorAll('[data-whatsapp-message]').forEach(link => {
+  const baseNum = '919391297961';
+  const msg = link.getAttribute('data-whatsapp-message');
+  link.href = `https://wa.me/${baseNum}?text=${encodeURIComponent(msg)}`;
+});
